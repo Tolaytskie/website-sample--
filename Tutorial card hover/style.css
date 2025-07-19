@@ -1,9 +1,8 @@
-
-
-
-.content{
-   
-    text-align: center;
-    color: white;
+*{
+    margin: 0;
+}
+nav{
+    background: black;
+    padding: 100px;
     
 }
