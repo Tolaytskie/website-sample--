@@ -1,3 +1,14 @@
 *{
     margin: 0;
 }
+nav{
+    background: #03045E;
+    padding: 0px;
+}
+
+
+.about{
+    float: right;
+    position: relative;
+    top: 50px;
+}
