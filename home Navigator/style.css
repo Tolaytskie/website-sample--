@@ -1,7 +1,103 @@
 *{
     margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Segoe Ui;
+}
+body{
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(Design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
 }
 nav{
-    background: blue;
-    padding: 15px;
+    background: #2c3e50;
+    padding: 0 20px;
+    border-radius: 5px;
 }
+.menu{
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+.menu li{
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+
+}
+.menu li:hover{
+    background: #34495e;
+}
+.menu li a{
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+.submenu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #34495e;
+    list-style: none;
+    min-width: 200px;
+    display: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 0 0 5px 5px;
+}   
+.submenu .submenu{
+    top: 0;
+    left: 100%;
+    border-radius: 5px;
+}
+.menu li:hover > .submenu{
+    display: block;
+    animation: fadein 0.3s ease;
+}
+
+.submenu li{
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1) ;
+    position: relative;
+}
+.submenu li:last-child{
+    border-bottom: none;
+}
+.submenu li:hover{
+    background: #3b4f63;
+}
+.menu li:hover > a {
+    color: #3495db; 
+}
+.submenu li:hover > a {
+    color: #2ecc71;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.menu li::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #3495db;
+    transition: width 0.3s ease;
+}
+.menu li:hover::after {
+    width: 100%;
+}
+
