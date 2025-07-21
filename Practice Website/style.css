@@ -8,23 +8,49 @@ nav{
     padding-left: 2.5%;
 
 }
-.about{
+.menu{
     float: right;
     display: flex;
     list-style: none;
     padding-right: 5%;
     position: relative;
     top: -49px;
- 
 }
 .link{
     font-family: sans-serif;
     font-size: 17px;
     color: whitesmoke;
     text-decoration: none;
-    margin: 0px 6px;
+    margin: 0px 16px;
     transition: 0.2s;
 }
 .link:hover{
     color: lightblue
 }
+.submenu{
+    position: absolute;
+    background: blue;
+    list-style: none;
+    top: 130%;
+    left: 25%;
+    display: none;
+    min-width: 200px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 0 0 5px 5px;
+}
+.submenu li{
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1) ;
+    position:relative;
+}
+.submenu li:last-child{
+    border-bottom: none;
+}
+.submenu li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: sans-serif;
+    display: block;
+    font-size: 16px;   
+}
+
