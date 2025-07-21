@@ -1,36 +1,39 @@
 *{
+    padding: 0;
     margin: 0;
-}
-nav{
-    background: gray;
-    padding: 50px;
-   
-}
-
-
-
-.nba{
-    float: right;
-    display: flex;
-    list-style: none;
-    padding-right: 10%;
-    position: relative;
-    top: -30px;
-  
-}
-.link{
     font-family: sans-serif;
-    font-size: 17px;
-    color: whitesmoke;
-    text-decoration: none;
-    margin: 0px 15px;
 }
-.submenu{
-    position: absolute;
-    background: darkgray;
+ul{
     list-style: none;
-    top: 100%;
-    left: 35%;
-    min-width: 100px;
-    
+    background: #22438c;
 }
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+ul li ul.dropbox li{
+    display: block;
+}
+ul li ul.dropbox {
+    width: 100%;
+    background: #22438c;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover{
+    background: #112C66;
+}
+ul li:hover ul.dropbox {
+    display: block;
+}
+
+
