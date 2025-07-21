@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+}
+nav{
+    background: gray;
+    padding: 50px;
+   
+}
+
+
+
+.nba{
+    float: right;
+    display: flex;
+    list-style: none;
+    padding-right: 10%;
+    position: relative;
+    top: -30px;
+  
+}
+.link{
+    font-family: sans-serif;
+    font-size: 17px;
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0px 15px;
+}
+.submenu{
+    position: absolute;
+    background: darkgray;
+    list-style: none;
+    top: 100%;
+    left: 35%;
+    min-width: 100px;
+    
+}
